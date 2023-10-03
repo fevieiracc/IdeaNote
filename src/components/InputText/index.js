@@ -1,14 +1,13 @@
 import { TextInput, StyleSheet } from "react-native";
 
-export default function InputText({placeholder}) {
+export default function InputComponent({placeholder}) {
     return (
-        <TextInput style={styles.InputStyled} placeholder={placeholder} keyboardType="text"/>
+        <TextInput style={styles.InputStyled} placeholder={placeholder} />
     )
 }
 
 const styles = StyleSheet.create({
     InputStyled: {
-        flex: 1,
         paddingVertical: 16,
         paddingHorizontal: 24,
         alignItems: 'center',
@@ -16,6 +15,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         borderRadius: 8,
         borderWidth: 1,
+        width: "100%",
         borderColor: '#F4F4F5',
         backgroundColor: '#FFF',
     }

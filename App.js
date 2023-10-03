@@ -17,8 +17,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <HeaderArea/>
-      <BtnArea BtnPrimary='Entrar na minha conta' BtnSecondary='Criar uma nova conta'/>
       <InputArea/>
+      <BtnArea BtnPrimary='Entrar na minha conta' BtnSecondary='Criar uma nova conta'/>
     </View>
   );
 };
