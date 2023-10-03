@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 
-export const BtnStyled = styled.TouchableOpacity`
+export const PrimaryBtnStyled = styled.TouchableOpacity`
     display: flex;
 padding: 16px 32px;
 justify-content: center;

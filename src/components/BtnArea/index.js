@@ -1,11 +1,12 @@
-import Btn from '../Btn/index'
+import PrimaryBtn from '../PrimaryBtn/index.js'
+import SecondaryBtn from '../SecondaryBtn/index.js'
 import { BtnAreaStyled } from './styles.js'
 
-export default function BtnArea() {
+export default function BtnArea({BtnPrimary, BtnSecondary}) {
     return (
         <BtnAreaStyled>
-            <Btn placeholder="Button 1"/>
-            <Btn placeholder="Button 2"/>
+            <PrimaryBtn placeholder={BtnPrimary}/>
+            <SecondaryBtn placeholder={BtnSecondary}/>
         </BtnAreaStyled>
     )
 }

@@ -1,7 +1,8 @@
 import { View, StyleSheet } from 'react-native'
-import Btn from './src/components/Btn/index.js'
 import { useFonts } from 'expo-font'
 import BtnArea from './src/components/BtnArea/index.js';
+import HeaderArea from './src/components/HeaderArea/index.js'
+import InputArea from './src/components/InputArea/index.js';
 
 export default function App() {
 
@@ -15,7 +16,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <BtnArea/>
+      <HeaderArea/>
+      <BtnArea BtnPrimary='Entrar na minha conta' BtnSecondary='Criar uma nova conta'/>
+      <InputArea/>
     </View>
   );
 };
